@@ -1,0 +1,58 @@
+{
+  "info": {
+    "name": "API Testing Collection",
+    "_postman_id": "12345",
+    "description": "CRUD API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET Users",
+      "request": {
+        "method": "GET",
+        "url": "https://jsonplaceholder.typicode.com/users"
+      }
+    },
+    {
+      "name": "POST User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"Pritam\" }"
+        },
+        "url": "https://jsonplaceholder.typicode.com/users"
+      }
+    },
+    {
+      "name": "PUT User",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\": \"Updated Pritam\" }"
+        },
+        "url": "https://jsonplaceholder.typicode.com/users/1"
+      }
+    },
+    {
+      "name": "DELETE User",
+      "request": {
+        "method": "DELETE",
+        "url": "https://jsonplaceholder.typicode.com/users/1"
+      }
+    }
+  ]
+}
